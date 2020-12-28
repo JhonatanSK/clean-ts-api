@@ -1,6 +1,11 @@
 export default {
 
-  collectCoverageFrom: ['<rootDir/src/**.ts>'],
+  collectCoverageFrom: [
+    '<rootDir/src/**.ts>',
+    '!<rootDir>/src/**/*-protocols.ts',
+    '!**protocols/**',
+    '!**test/**'
+  ],
   coverageDirectory: "coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
